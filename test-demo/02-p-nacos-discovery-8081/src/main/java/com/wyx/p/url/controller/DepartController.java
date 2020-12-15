@@ -2,7 +2,6 @@ package com.wyx.p.url.controller;
 
 import com.wyx.p.url.bean.Depart;
 import com.wyx.p.url.service.DepartService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;

@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.wyx</groupId>
-	<artifactId>01-c-nacos-discovery-8080</artifactId>
+	<artifactId>02-c-nacos-discovery-8080</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>${artifactId}</name>
 	<description>
