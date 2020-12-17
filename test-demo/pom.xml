@@ -20,8 +20,8 @@
 <!--        <module>01-c-url-8080</module>-->
 <!--        <module>01-p-url-8081</module>-->
 
-        <module>02-c-nacos-discovery-8080</module>
-        <module>02-p-nacos-discovery-8081</module>
+<!--        <module>02-c-nacos-discovery-8080</module>-->
+<!--        <module>02-p-nacos-discovery-8081</module>-->
 
     </modules>
 
