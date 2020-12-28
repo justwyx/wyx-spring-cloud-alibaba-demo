@@ -4,25 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>wyx-spring-cloud-alibaba-demo</artifactId>
-        <groupId>org.wyx</groupId>
+        <groupId>com.wyx</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.wyx</groupId>
-    <artifactId>test-demo</artifactId>
-    <packaging>pom</packaging>
-    <description>
-        01:直连方式调用
-    </description>
+    <artifactId>spring-cloud-alibaba-demo</artifactId>
 
-    <modules>
-<!--        <module>01-c-url-8080</module>-->
-<!--        <module>01-p-url-8081</module>-->
+    <properties>
 
-<!--        <module>02-c-nacos-discovery-8080</module>-->
-<!--        <module>02-p-nacos-discovery-8081</module>-->
 
-    </modules>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
 
 </project>
