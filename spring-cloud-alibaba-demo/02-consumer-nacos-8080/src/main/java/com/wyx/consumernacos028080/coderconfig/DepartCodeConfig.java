@@ -1,4 +1,4 @@
-package com.wyx.consumer018080.coderconfig;
+package com.wyx.consumernacos028080.coderconfig;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

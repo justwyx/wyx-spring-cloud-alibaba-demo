@@ -1,7 +1,7 @@
-package com.wyx.providernacos028081.controller;
+package com.wyx.providernacosconfig038081.controller;
 
-import com.wyx.providernacos028081.bean.Depart;
-import com.wyx.providernacos028081.service.DepartService;
+import com.wyx.providernacosconfig038081.bean.Depart;
+import com.wyx.providernacosconfig038081.service.DepartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

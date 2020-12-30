@@ -1,6 +1,6 @@
-package com.wyx.consumer018080.controller;
+package com.wyx.consumernacos028080.controller;
 
-import com.wyx.consumer018080.bean.Depart;
+import com.wyx.consumernacos028080.bean.Depart;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;

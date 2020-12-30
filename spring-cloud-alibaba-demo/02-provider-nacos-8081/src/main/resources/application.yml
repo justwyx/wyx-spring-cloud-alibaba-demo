@@ -1,6 +1,7 @@
 # server
 server:
   port: 8081
+
 # spring
 spring:
   application:
@@ -10,7 +11,7 @@ spring:
     nacos:
       discovery:
         # server-addr: 127.0.0.1:8848
-        server-addr: 127.0.0.1:8847,127.0.0.1:8848,127.0.0.1:8849
+        server-addr: nacosOS1:8847,nacosOS2:8848,nacosOS3:8849
   # jpa
   jpa:
     generate-ddl: true
@@ -24,6 +25,7 @@ spring:
     url: jdbc:mysql://localhost:3306/wyx_test?useSSL=false&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai
     username: root
     password: root
+
 # logging
 logging:
   pattern:

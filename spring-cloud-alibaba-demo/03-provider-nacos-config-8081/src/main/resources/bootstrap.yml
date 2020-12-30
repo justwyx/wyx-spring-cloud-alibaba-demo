@@ -1,0 +1,18 @@
+# spring
+spring:
+  application:
+    name: wyx-provider # 根据微服务名称来找动态配置文件
+  profiles:
+    active: test
+  # cloud
+  cloud:
+    nacos:
+      # discovery
+      discovery:
+        server-addr: nacosOS1:8847,nacosOS2:8848,nacosOS3:8849
+#        namespace: myNamespaceId
+#        cluster-name: myNamespace
+      # config
+      config:
+        server-addr: nacosOS1:8847,nacosOS2:8848,nacosOS3:8849
+        file-extension: yml

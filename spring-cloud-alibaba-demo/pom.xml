@@ -22,14 +22,18 @@
         02-consumer-nacos-8080
         02-provider-nacos-8081
 
+        # 03:配置中心-demo
+        03-provider-nacos-config-8081
     </description>
 
     <modules>
 <!--        <module>01-consumer-8080</module>-->
 <!--        <module>01-provider-8081</module>-->
 
-        <module>02-consumer-nacos-8080</module>
-        <module>02-provider-nacos-8081</module>
+<!--        <module>02-consumer-nacos-8080</module>-->
+<!--        <module>02-provider-nacos-8081</module>-->
+
+        <module>03-provider-nacos-config-8081</module>
     </modules>
 
     <properties>

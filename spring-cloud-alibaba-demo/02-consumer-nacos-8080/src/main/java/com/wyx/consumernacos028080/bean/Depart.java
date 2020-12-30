@@ -1,4 +1,4 @@
-package com.wyx.consumer018080.bean;
+package com.wyx.consumernacos028080.bean;
 
 import lombok.Data;
 
