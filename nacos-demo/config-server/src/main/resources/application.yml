@@ -1,0 +1,27 @@
+# server
+server:
+  port: 9999
+spring:
+  # \u6307\u5B9A\u5F53\u524D\u5FAE\u670D\u52A1\u5BF9\u5916\u66B4\u9732\u7684\u540D\u79F0
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          # \u6307\u5B9Agit\u8FDC\u7A0B\u5E93\u5730\u5740
+          uri: https://github.com/justwyx/wyx-spring-cloud-config-center.git
+          # \u6307\u5B9A\u83B7\u53D6\u5230git\u8FDC\u7A0B\u5E93\u8FDE\u63A5\u7684\u8D85\u65F6\u65F6\u9650\uFF0C\u9ED8\u8BA4\u4E3A5\u79D2
+          timeout: 5
+          # \u6307\u5B9A\u8981\u64CD\u4F5C\u7684git\u8FDC\u7A0B\u5E93\u5206\u652F\uFF0C\u9ED8\u8BA4master
+          default-label: master
+          username: 1012765202@qq.com
+          password: Wyx1994612.github
+
+eureka:
+  # \u6307\u5B9Aeureka\u670D\u52A1\u4E2D\u5FC3
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
+  instance:
+    prefer-ip-address: true
