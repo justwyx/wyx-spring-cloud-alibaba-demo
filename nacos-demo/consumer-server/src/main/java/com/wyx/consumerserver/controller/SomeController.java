@@ -1,5 +1,6 @@
 package com.wyx.consumerserver.controller;
 
+import com.wyx.consumerserver.config.PasswordConfig;
 import com.wyx.consumerserver.sao.UserFeignClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -22,6 +23,8 @@ public class SomeController {
 	private String prefix;
 
 	@Resource
+	private PasswordConfig passwordConfig;
+	@Resource
 	private UserFeignClient userFeignClient;
 
 	@GetMapping(value = "/getPrefix")
@@ -32,5 +35,10 @@ public class SomeController {
 	@GetMapping(value = "/getUserId")
 	public Integer getUserId (){
 		return userFeignClient.getUserId();
+	}
+
+	@GetMapping(value = "/getPasswordConfig")
+	public String getPasswordConfig (){
+		return passwordConfig.toString();
 	}
 }
