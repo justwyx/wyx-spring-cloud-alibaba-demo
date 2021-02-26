@@ -1,0 +1,19 @@
+# \u914D\u7F6Edev\u73AF\u5883
+server:
+  port: 8082
+spring:
+  # \u6307\u5B9A\u5F53\u524D\u5FAE\u670D\u52A1\u5BF9\u5916\u66B4\u9732\u7684\u540D\u79F0
+  application:
+    name: provide-code
+  # cloud
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacosOS1:8847,nacosOS2:8848,nacosOS3:8849
+#eureka:
+#  # \u6307\u5B9Aeureka\u670D\u52A1\u4E2D\u5FC3
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8000/eureka/
+#  instance:
+#    prefer-ip-address: true

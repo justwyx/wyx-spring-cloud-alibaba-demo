@@ -1,27 +1,20 @@
-
 # bootstrap.yml\uFF1A\u5728\u542F\u7528\u542F\u52A8\u65F6\u52A0\u8F7D\uFF0C\u5176\u4E00\u822C\u7528\u4E8E\u914D\u7F6E\u5E94\u7528\u542F\u52A8\u8FC7\u7A0B\u4E2D\u6240\u9700\u8981\u7684\u6570\u636E\uFF0C\u5373\u82E5\u6CA1\u6709\u8FD9\u4E9B\u914D\u7F6E\uFF0C\u5219\u5E94\u7528\u65E0\u6CD5\u542F\u52A8
 # application.yml\uFF1A\u5728\u542F\u7528\u542F\u52A8\u65F6\u52A0\u8F7D\uFF0C\u5176\u4E00\u822C\u7528\u4E8E\u914D\u7F6E\u5E94\u7528\u8FD0\u884C\u8FC7\u7A0B\u4E2D\u6240\u9700\u8981\u7684\u6570\u636E\uFF0C\u5373\u82E5\u6CA1\u6709\u8FD9\u4E9B\u914D\u7F6E\uFF0C\u5219\u5E94\u7528\u65E0\u6CD5\u8FD0\u884C
 spring:
   # \u6307\u5B9A\u5F53\u524D\u5FAE\u670D\u52A1\u5BF9\u5916\u66B4\u9732\u7684\u540D\u79F0
   application:
     name: consumer-server
+  profiles:
+    active: test
+  # cloud
   cloud:
-    config:
-      # \u6307\u5B9A\u8981\u8FDE\u63A5\u7684config server\u7684uri
-      # uri: http://localhost:9999,http://localhost:8888,http://localhost:7777
-      uri: http://localhost:9999
-      # \u6307\u5B9A\u8981\u8BBF\u95EE\u7684\u8FDC\u7A0B\u5E93\u5206\u652F
-      label: master
-      # \u6307\u5B9A\u8981\u4ECEgit\u8FDC\u7A0B\u5E93\u8BFB\u53D6\u7684\u914D\u7F6E\u6587\u4EF6\u540D\u79F0\uFF0C\u6CE8\u610F\u65E0\u9700\u6269\u5C55\u540D
-      name: application-consumer-config
-      # \u73AF\u5883\u9009\u62E9
-      profile: dev
-
-
-eureka:
-  # \u6307\u5B9Aeureka\u670D\u52A1\u4E2D\u5FC3
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8000/eureka/
-  instance:
-    prefer-ip-address: true
+    # nacos
+    nacos:
+      # discovery
+      discovery:
+        server-addr: nacosOS1:8847,nacosOS2:8848,nacosOS3:8849
+      # config
+      config:
+        server-addr: nacosOS1:8847,nacosOS2:8848,nacosOS3:8849
+        # \u6307\u5B9A\u8FDC\u7A0B\u5E93\u4E2D\u7684\u914D\u7F6E\u6587\u4EF6\u7C7B\u578B\uFF0C\u9ED8\u8BA4\u4E3Aproperty
+        file-extension: yml

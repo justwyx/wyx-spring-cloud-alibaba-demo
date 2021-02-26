@@ -15,4 +15,5 @@ spring:
       # config
       config:
         server-addr: nacosOS1:8847,nacosOS2:8848,nacosOS3:8849
+        # 指定远程库中的配置文件类型，默认为property
         file-extension: yml
